@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #F2F2F2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #353D40;
+    text-align: center;
+    padding: 15px;
+}
+
+section {
+    background-color: #f2e18d54;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#cotação {
+    margin: 5px 0;
+}
+
+#valor {
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 8px;
+    outline: none;
+}
+
+#valorFinal {
+    color: #353D40;
+    font-weight: 600;
+}
+
+#btn {
+    width: 100px;
+    padding: 5px 10px;
+    background-color: #D95F69;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px grey;
+    outline: none;
+}
