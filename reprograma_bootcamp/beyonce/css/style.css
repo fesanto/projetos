@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-image: url("../img/bg.png");
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.white-box {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #5D1277;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.white-box__top p {
+    font-size: 13px;
+    padding-bottom: 40px;
+}
+
+.white-box__top img {
+    width: 71%;
+}
+
+.white-box__social-medias img {
+    margin: 5px;
+    width: 30%;
+}
+
+@media (min-width: 375px) {
+    .white-box__top img {
+        width: 66%;
+    }
+}
+
+@media (min-width: 411px) {
+    .container {
+        width: 75%;
+    }
+    h1 {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 480px) {
+    .container {
+        width: 80%;
+    }
+    .white-box__top img {
+        width: 45%;
+    }
+    .white-box__social-medias img {
+        width: 19%;
+    }
+}
+
+@media (min-width: 575px) {
+    .container {
+        width: 75%;
+    }
+    .white-box__top img {
+        width: 40%;
+    }
+    .white-box__social-medias img {
+        width: 18%;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        width: 70%;
+    }
+    .white-box__top img {
+        width: 38%;
+    }
+    .white-box__social-medias img {
+        width: 17%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 60%;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .white-box__top p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 55%;
+    }
+    .white-box__top img {
+        width: 35%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .white-box__top p {
+        font-size: 16px;
+    }
+    .white-box__social-medias img {
+        width: 16%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 45%;
+    }
+}
