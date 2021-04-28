@@ -81,7 +81,7 @@ img {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     html {
         font-size: 14px;
     }
