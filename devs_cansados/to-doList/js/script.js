@@ -1,5 +1,6 @@
 const Main = {
 
+    //atributos criados
     $checkButtons: [],
     $inputTask: null,
     $list: null,
@@ -34,8 +35,8 @@ const Main = {
         this.$inputTask.onkeypress = self.Events.inputTask_keypress.bind(this);
 
         this.$removeButtons.forEach(function (button) {
-            button.onclick = self.Events.removeButtons_click;;
-        }); 
+            button.onclick = self.Events.removeButtons_click;
+        });
     },
 
     Events: {
@@ -86,7 +87,7 @@ const Main = {
             //console.log(li, "remove");
             li.classList.add('removed');
 
-            setTimeout(function(){
+            setTimeout(function () {
                 li.classList.add('hidden');
             }, 300)
         },
