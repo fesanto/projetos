@@ -1,0 +1,30 @@
+body {
+  background-color: #000;
+}
+
+#card {
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+  background: url('../img/background.png') no-repeat;
+  background-size: cover;
+  padding: 1px 20px;
+  margin-top: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.insta {
+list-style-image: url('../img/insta.png');
+}
+
+.twitter {
+list-style-image: url('../img/twitter.png');
+}
+
+.yt {
+list-style-image: url('../img/youtube.png');
+}
