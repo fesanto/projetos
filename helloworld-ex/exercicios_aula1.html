@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercícios JavaScript</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+//1) Se eu tenho 24 anos que ano eu nasci? Faça um programa em javaScript que retorne o ano de nascimento.
+var eu=24;
+var nasc=2018-eu;
+document.write("<strong>Ex.1</strong><br>Se, em 2018, eu estou com 24 anos, então nasci em" +nasc+".<br>");
+document.write("<hr>");
+
+//2) Faça um programa que qualquer a média de idade de 3 amigos.
+var paulo=24;
+var adriano=18;
+var luciano=36;
+var media=(paulo+adriano+luciano)/3;
+document.write("<strong>Ex.2</strong><br>A média das idades de Paulo, Adriano e Luciano é "+media+".<br>");
+document.write("<hr>");
+
+//3) Escrever um algoritmo que leia o nome de um aluno e as notas das três provas que ele obteve no semestre. No final informar o nome do aluno e a sua média (aritmética).
+var aluno="Lucas";
+var n1=7.5;
+var n2=8.0;
+var n3=9.0;
+var media=(n1+n2+n3)/3;
+document.write("<strong>Ex.3</strong><br>O aluno " +aluno+" obteve as seguintes notas no semestre: "+n1+", "+n2+" e "+n3+". A média delas é "+Math.round(media)+".<br>");
+document.write("<hr>");
+
+//4) Ler dois valores para as variáveis A e B, e efetuar as trocas dos valores de forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados.
+var a=7;
+var b=13;
+c = a;
+d = b;
+document.write("<strong>Ex.4</strong><br>A vale "+c+ " e B vale "+d+". Com a troca, A passou a valer "+d+" e B passou a valer "+c+".");
+document.write("<hr>");
+
+//5) Usando a function mostrar criar um programa que mostre o IMC.
+var peso=90;
+var alt=1.67;
+var imc=(peso/(alt*alt));
+var mostra=function(peso,alt){
+	document.write("<strong>Ex.5</strong><br>O IMC é "+imc);
+}
+mostra();
+document.write("<hr>");
+
+//6) Agora crie uma function para calcular o IMC dos seus amigos :)
+var pesoLeandro=95;
+var altLeandro=1.90;
+var pesoMarcos=82;
+var altMarcos=1.98;
+var pesoCamilo=75;
+var altCamilo=1.81;
+var imcL=(pesoLeandro/(altLeandro*altLeandro));
+var imcM=(pesoMarcos/(altMarcos*altMarcos));
+var imcC=(pesoCamilo/(altCamilo*altCamilo));
+var mostra1=function(pesoLeandro,altLeandro){
+	document.write("<strong>Ex.6</strong><br>O IMC do Leandro é "+imcL+"<br>");
+}
+var mostra2=function(pesoMarcos,altMarcos){
+	document.write("O IMC do Marcos é "+imcM+"<br>");
+}
+var mostra3=function(pesoCamilo,altCamilo){
+	document.write("O IMC do Camilo é "+imcC+"<br>");
+}
+mostra1();
+mostra2();
+mostra3();
+document.write("<hr>");
+
+//7) Invés de usar a função mostrar coloque return e variável
+var peso=90;
+var alt=1.67;
+var imc=function(peso,alt){
+	return (peso/(alt*alt));
+}
+document.write("<strong>Ex.7</strong><br>O IMC é "+imc(peso,alt));
+document.write("<hr>");
+
+//8) Iremos arredondar a variável imc
+var peso=90;
+var alt=1.67;
+var imc=function(peso,alt){
+	return Math.round(peso/(alt*alt));
+}
+document.write("<strong>Ex.8</strong><br>O IMC é "+imc(peso,alt));
+document.write("<hr>");
+
+//9) Pergunte idade de uma pessoa usando o comando prompt
+var imc=function(peso,alt){
+	return Math.round(peso/(alt*alt));
+}
+
+var alt=window.prompt("Digite a altura: ");
+var peso=window.prompt("Digite o peso: ");
+window.alert("O IMC é "+imc(peso,alt));
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+/*quando usar uma imagem de background, é NECESSÁRIO definir o TAMANHO da imagem no padding*/
+header.banner-home{
+	background: url("../img/masthead.png") no-repeat center center;
+	padding-top:25%;
+	padding-bottom:40%;
+}
+
+section.s-1{
+	background-color: #da4c7a;
+}
+
+a{
+	color: #ccc;
+	font-size: 12px;
+}
+
+a:hover{
+	color: #ccc;
+	font-size:14px;
+}
+
+i{
+	color: orange;
+}

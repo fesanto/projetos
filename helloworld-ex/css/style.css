@@ -1,0 +1,39 @@
+p#cabecalho{
+	color: #ffffff;
+	font-size: 15px;
+	padding: 5px;
+}
+
+header.banner-home{
+	position: relative;
+	background: url("../img/aulas.jpg") no-repeat center center;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+}
+
+i{
+	color: #007bff;
+}
+
+i.icone{
+	font-size: 4rem;
+}
+
+i.rodape{
+	color: #c74335;
+}
+
+a{
+	color: #c74335;
+}
+
+a:hover{
+	font-weight: bolder;
+	color: #c74335;
+	text-decoration: none;
+}
+
+a.rodape:hover{
+	color: #c74335;
+	text-decoration: none;
+}
