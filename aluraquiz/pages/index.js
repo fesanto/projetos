@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
@@ -43,20 +45,31 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <>
-      <QuizBackground backgroundImage={db.bg}>
-        <QuizContainer>
-          <Widget>
-            <Widget.Header>Texto Cabeçalho</Widget.Header>
-            <Widget.Content>Alá...1</Widget.Content>
-          </Widget>
-          <Widget>
-            <Widget.Content>Alá...2</Widget.Content>
-          </Widget>
-          <Footer />
-        </QuizContainer>
-        <GitHubCorner projectUrl="https://github.com/fesanto" />
-      </QuizBackground>
-    </>
+    <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Alura Quiz</title>
+      </Head>
+      <QuizContainer>
+        <Widget>
+          <Widget.Header>Texto Cabeçalho</Widget.Header>
+          <Widget.Content>
+            <form onSubmit={function () {
+              console.log('testando... funfou');
+            }}
+            >
+              <input type="text" placeholder="Digite seu nome" />
+              <button type="submit">
+                Jogar, [seuNome]
+              </button>
+            </form>
+          </Widget.Content>
+        </Widget>
+        <Widget>
+          <Widget.Content>Alá...2</Widget.Content>
+        </Widget>
+        <Footer />
+      </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/fesanto" />
+    </QuizBackground>
   );
 }

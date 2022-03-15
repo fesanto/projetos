@@ -1,7 +1,9 @@
+/* eslint-disable react/react-in-jsx-scope */
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  background-color: #000070;
+  background: #000070;
+  opacity: 0.3;
   padding:20px;
   display: flex;
   align-items: center;
@@ -29,12 +31,19 @@ const FooterWrapper = styled.footer`
 
 export default function Footer(props) {
   return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
       <a href="https://www.alura.com.br">
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1576550767.svg" alt="Logo Alura" />
       </a>
       <p>
-        Orgulhosmente criado durante {''} a {''}
+        Orgulhosmente criado durante
+        {' '}
+
+        {' '}
+        a
+        {' '}
+
         <a href="https://www.alura.com.br/">
           <span>Imersão React da Alura</span>
         </a>
